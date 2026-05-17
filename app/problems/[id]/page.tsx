@@ -36,7 +36,7 @@ export default function ProblemDetailPage() {
       console.log('Response Status:', status);
       console.log('Response Text:', text);
       
-      let data = {};
+      let data: any = {};
       try {
         data = text ? JSON.parse(text) : {};
       } catch (e) {
